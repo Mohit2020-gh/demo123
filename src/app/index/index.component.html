@@ -1,0 +1,9 @@
+<h1>Welcome To Login Page</h1>
+
+<input type="radio" name="a" [(ngmodel)]='a' value="Admin"/>Admin   &nbsp; &nbsp;
+<input type="radio" name="a" [(ngmodel)]='a' value="User"/>User     &nbsp; &nbsp;
+<input type="radio" name="a" [(ngmodel)]='a' value="Seller">Seller  &nbsp; &nbsp;
+
+<app-admin-login *ngIF=' a=="Admin" '></app-admin-login>
+<app-user-login *ngIF=' a=="User"  '></app-user-login>
+<app-seller-login *ngIF=' a=="Seller" '></app-seller-login>
